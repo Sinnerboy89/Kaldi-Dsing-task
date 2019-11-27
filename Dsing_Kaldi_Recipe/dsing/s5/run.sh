@@ -16,7 +16,7 @@ dsing=1   #  Set:  1  for DSing1
           #        30 for DSing30
 
 # For TDNN-F only
-decode_nj=1
+decode_nj=0
 
 # End configuration section
 . ./utils/parse_options.sh
@@ -28,14 +28,13 @@ set -e # exit on error
 
 # Sing! 300x30x2 corpus path
 # please change the path accordingly
-sing_corpus=/fastdata/acp13gr/DAMP300x30x20/sing_300x30x2
+sing_corpus=
 
 
 echo "Using steps and utils from WSJ recipe"
 [[ ! -L "wav" ]] && ln -s $sing_corpus wav
 [[ ! -L "steps" ]] && ln -s $KALDI_ROOT/egs/wsj/s5/steps
 [[ ! -L "utils" ]] && ln -s $KALDI_ROOT/egs/wsj/s5/utils
-
 
 trainset=train${dsing}
 devset="dev"

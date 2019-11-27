@@ -215,3 +215,7 @@ dmypy.json
 .pyre/
 
 # End of https://www.gitignore.io/api/python,intellij+all
+Dsing_Kaldi_Recipe/dsing/s5/steps
+Dsing_Kaldi_Recipe/dsing/s5/utils
+Dsing_Kaldi_Recipe/dsing/s5/wav
+Dsing_Kaldi_Recipe/dsing/s5/data/local/corpus.txt
