@@ -16,7 +16,7 @@ dsing=1   #  Set:  1  for DSing1
           #        30 for DSing30
 
 # For TDNN-F only
-decode_nj=0
+decode_nj=1
 
 # End configuration section
 . ./utils/parse_options.sh
@@ -28,7 +28,7 @@ set -e # exit on error
 
 # Sing! 300x30x2 corpus path
 # please change the path accordingly
-sing_corpus=
+sing_corpus=/home/chrisb/sing_300x30x2
 
 
 echo "Using steps and utils from WSJ recipe"
