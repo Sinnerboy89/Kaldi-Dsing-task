@@ -10,7 +10,7 @@
 # Begin configuration section
 
 nj=40
-stage=1   #  Set:  0  from start
+stage=2   #  Set:  0  from start
           #        2 skip to MFCC extraction
 dsing=1   #  Set:  1  for DSing1
           #        3  for DSing3
