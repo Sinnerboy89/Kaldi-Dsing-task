@@ -22,7 +22,7 @@ decode_nj=1
 # End configuration section
 . ./utils/parse_options.sh
 
-source path.sh
+. ./path.sh
 . ./cmd.sh
 
 set -e # exit on error
