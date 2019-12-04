@@ -9,9 +9,10 @@
 
 # Begin configuration section
 
-nj=40
-stage=2   #  Set:  0  from start
+nj=5
+stage=3   #  Set:  0  from start
           #        2 skip to MFCC extraction
+          #        3 skip to train GMM
 dsing=1   #  Set:  1  for DSing1
           #        3  for DSing3
           #        30 for DSing30
