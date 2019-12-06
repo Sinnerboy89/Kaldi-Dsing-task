@@ -28,3 +28,22 @@ chmod +x steps/train_mono.sh
 chmod +x utils/data/get_utt2dur.sh
 chmod +x utils/data/internal/modify_speaker_info.py
 chmod +x utils/filter_scps.pl
+chmod +x steps/diagnostic/analyze_alignments.sh
+chmod +x utils/summarize_warnings.pl
+chmod +x steps/info/gmm_dir_info.pl
+chmod +x steps/align_si.sh
+chmod +x steps/decode_fmllr.sh
+
+# turn on "allow_uneven_split" in train_mono.sh or else it complains
+
+# more permissions
+chmod +x steps/diagnostic/analyze_alignments.sh
+chmod +x utils/lang/check_phones_compatible.sh
+chmod +x steps/train_deltas.sh
+chmod +x steps/train_lda_mllt.sh
+chmod +x steps/train_sat.sh
+chmod +x steps/decode.sh
+chmod +x steps/cleanup/clean_and_segment_data.sh
+chmod +x local/chain/run_tdnn_1d.sh
+chmod +x steps/diagnostic/analyze_lats.sh
+chmod +x steps/scoring/score_kaldi_wer.sh

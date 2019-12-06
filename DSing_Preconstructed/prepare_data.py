@@ -65,7 +65,7 @@ class DataSet:
         if not exists(join(self.workspace, "audio")):
             makedirs(join(self.workspace, "audio"))
         for s in self.sentences:
-            a = subprocess.run(s, capture_output=True, shell=True)
+            a = subprocess.run(s, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
             warnings = 1
             if 'WARN' in str(a.stderr):
                 print("WARNING {}".format(warnings))
@@ -104,7 +104,7 @@ def main(args):
     db_path = args.db_path
     workspace = args.workspace
     dset = args.dset
-    utts_path = "../DSing Kaldi Recipe/dsing/s5/conf/{}.json".format(dset)
+    utts_path = "../DSing_Kaldi_Recipe/dsing/s5/conf/{}.json".format(dset)
 
     countries = ["GB"]
     countries += ["US", "AU"] if dset in ["train3", "train30"] else []
