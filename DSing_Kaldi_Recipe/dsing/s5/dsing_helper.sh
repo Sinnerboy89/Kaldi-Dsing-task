@@ -90,5 +90,5 @@ cat exp/$model'_alignme'/*.ctm > merged_alignment.txt
 # convert phone ID to phone
 Rscript id2phone.R
 
-# split by file
-python splitAlignments.py
+# split by file and convert into CPRC lab format
+python dsing2lab.py

@@ -9,7 +9,6 @@ phones <- read.table("/home/chrisb/Kaldi-Dsing-task/DSing_Kaldi_Recipe/dsing/s5/
 ctm <- read.table("/home/chrisb/Kaldi-Dsing-task/DSing_Kaldi_Recipe/dsing/s5/merged_alignment.txt", quote="\"")
 
 names(ctm) <- c("file_utt","utt","start","dur","id")
-ctm$file <- gsub("_[0-9]*$","",ctm$file_utt)
 names(phones) <- c("phone","id")
 
 ctm2 <- merge(ctm, phones, by="id")
